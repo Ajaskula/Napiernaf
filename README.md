@@ -1,5 +1,4 @@
-# Napiernaf
-Introduction
+# Introduction
 Balanced binary representation (BBR) is a positional numeral system for integers with base 2 and digits -1, 0, 1. The BBR representation of a number is in the form of a non-adjacent form (NAF) if non-zero digits are not adjacent to each other.
 
 Each integer has exactly one BBR-NAF representation without leading zeros. For 0, it is empty. For a non-zero x, the least significant digit c is:
@@ -11,6 +10,7 @@ The more significant digits of the BBR representation of x form the representati
 
 The BBR-NAF representation minimizes the Hamming weight of the number, which is the number of non-zero digits, among all binary representations. For example, Mersenne prime numbers have a Hamming weight of 2 in this representation. BBR-NAF is used in elliptic curve cryptography, including implementations of the Bitcoin cryptocurrency and the Ethereum platform.
 
+# Description
 This task involves implementing the representation of BBR-NAF, allowing efficient arithmetic operations on large integers with a small Hamming weight.
 
 The representation is based on the arithmeticæ localis number system, described by John Napier in 1617 in his treatise Rabdologiæ. It is a binary, but non-positional, additive system.
@@ -48,7 +48,8 @@ a = b * q + r,
 
 where abs(b) is the absolute value of b.
 
+# Task
 Write a module napiernaf.c implementing the napiernaf.h interface.
 
-Examples
+# Examples
 Examples of programs using the napiernaf.c module and the expected output are provided in the files przyklad1.c with the output in przyklad1.out, przyklad2.c with the output in przyklad2.out, przyklad3.c with the output in przyklad3.out, and przyklad4.c with the output in przyklad4.out.
